@@ -1,0 +1,184 @@
+html{
+    min-height: 100%;
+}
+body{
+    margin: 0;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    height: 100%;
+}
+.box-left{
+    flex: 1;
+    background: #edf0f5;
+    padding: 3%;
+}
+.box-left h1{
+    font-size: 32px;
+    text-align: center;
+}
+.box-left ul{
+    padding: 0;
+    list-style: none;
+}
+.box-left ul li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.box-left ul li b{
+    margin-bottom: 2px;
+}
+.box-left a{
+    color: #6b5ad0;
+    text-decoration: none;
+}
+.profile-img{
+    max-width: 160px;
+    margin: auto;
+}
+.profile-img img{
+    border-radius: 50%;
+    max-width: 100%;
+}
+.box-right{
+    padding: 5%;
+    flex: 4;
+    background: #fcfdff;
+}
+.box-right h1{
+    font-size: 44px;
+    margin: 15px 0;
+}
+
+
+.item{
+    margin-bottom: 40px;
+}
+.item-head{
+    padding: 6px 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #7c828a;
+    border-radius: 10px;
+}
+.item-head h2{
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+.item-icon{
+    position: absolute;
+    left: -27px;
+    width: 54px;
+    background: white;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid #7c828a;
+}
+.item-icon img{
+    max-width: 100%;
+}
+
+.two-col{
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    border-bottom: 2px solid #7c828a
+}
+.two-col li{
+    display: flex;
+    position: relative;
+}
+.two-col li:before{
+    content: "";
+    width: 2px;
+    background: #7c828a;
+    padding-bottom: 80px;
+}
+.two-col li:after{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: #66a7f3;
+    border-radius: 50%;
+}
+.two-col .year{
+    flex: 1;
+    font-size: 20px;
+    padding: 0 30px 20px;
+    white-space: nowrap;
+}
+.two-col .desc{
+    flex: 4;
+    padding-bottom: 20px;
+}
+.two-col .desc span{
+    display: flex;
+    font-size: 20px
+}
+.two-col .desc p{
+    font-size: 16px;
+    margin: 5px 0 10px;
+}
+
+
+.two-col.skills li:after{
+    content: none;
+}
+.two-col.skills .year{
+    text-align: right;
+}
+
+.skills-item{
+    margin-top: 5px;
+}
+.skills-item .circle{
+    display: inline-flex;
+    margin-right: 4px;
+    height: 13px;
+    width: 13px;
+    border: 2px solid #7c828a;
+    border-radius: 50%;
+}
+.skills-item .circle.check{
+    background: #7c828a;
+}
+
+@media (max-width: 756px) {
+    .box{
+        flex-direction: column;
+    }
+    .box-left ul{
+        text-align: center;
+    }
+    .item-icon{
+        display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .two-col .year,
+    .two-col .desc span{
+        font-size: 16px;
+    }
+    .two-col .desc p{
+        font-size: 14px;
+    }
+    .two-col .year{
+        padding: 0 13px 20px;
+    }
+    .skills-item{
+        margin-top: 0;
+    }
+  }
