@@ -155,6 +155,10 @@ body{
     background: #7c828a;
 }
 
+.my-projects .year{
+    text-align: left;
+}
+
 @media (max-width: 756px) {
     .box{
         flex-direction: column;
